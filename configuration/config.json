@@ -1,0 +1,54 @@
+{
+  "sin": {
+      "batch_size": 8,
+      "epochs": [20],
+      "early_stopping_patience": 15,
+      "dropout": [0.2],
+      "lr": [1e-4],
+      "weight_decay": [1e-5],
+      "dim": 2,
+      "win_len": 25,
+      "steps": 25,
+      "hidden_size": [20, 40, 50, 60, 80, 100, 150, 200],
+      "l_hist_size": 200,
+      "l_new_size":  [20, 40, 50, 60, 80, 100, 150, 200],
+      "ks_alpha": [0.05],
+      "ks_hist_min_size": [20, 50, 100, 150, 200, 250, 300],
+      "kld_epsilon": [0.0025, 1e-3]
+  },
+  "SMD": {
+      "batch_size": 8,
+      "epochs": [20],
+      "early_stopping_patience": 15,
+      "dropout": [0.2],
+      "lr": [1e-4],
+      "weight_decay": [1e-5],
+      "dim": 38,
+      "win_len": 100,
+      "steps": 100,
+      "hidden_size": [20, 40, 50, 60, 80, 100, 150, 200],
+      "l_hist_size": 200,
+      "l_new_size":  [20, 40, 50, 60, 80, 100, 150, 200],
+      "ks_alpha": [0.05],
+      "ks_hist_min_size": [20, 50, 100, 150, 200, 250, 300],
+      "kld_epsilon": [0.0025, 1e-3]
+
+  },
+    "Forest": {
+      "batch_size": 8,
+      "epochs": [20],
+      "early_stopping_patience": 5,
+      "dropout": [0.2],
+      "lr": [1e-4],
+      "weight_decay": [1e-5],
+      "dim": 54,
+      "win_len": 100,
+      "steps": 100,
+      "hidden_size": [20, 40, 50, 60, 80, 100, 150, 200],
+      "l_hist_size": 200,
+      "l_new_size":  [20, 40, 50, 60, 80, 100, 150, 200],
+      "ks_alpha": [0.05],
+      "ks_hist_min_size": [20, 50, 100, 150, 200, 250, 300],
+      "kld_epsilon": [1e-1, 1e-2, 1e-3, 1e-4, 1e-5, 1e-6,1e-7]
+  }
+}
